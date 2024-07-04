@@ -15,8 +15,8 @@ public class Student implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
+    @TableId(value = "sno", type = IdType.AUTO)
+    private Integer sno;
 
     @TableField("sname")
     private String sname;
@@ -29,6 +29,16 @@ public class Student implements Serializable {
 
     @TableField("spwd")
     private String spwd;
+
+    @TableField("temperature")
+    private String temperature;
+
+
+    @TableField("situation")
+    private String situation;
+
+    @TableField("atschool")
+    private String atschool;
 
     @TableField("time")
     private Date time;

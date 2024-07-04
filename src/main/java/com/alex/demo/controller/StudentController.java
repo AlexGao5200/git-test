@@ -5,12 +5,14 @@ import com.alex.demo.entity.Student;
 import com.alex.demo.req.StudentReq;
 import com.alex.demo.service.IStudentService;
 import com.github.pagehelper.PageInfo;
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
+@Api(tags = "学生管理")
 @Validated
 @RestController
 @RequestMapping("/api/service/student")
