@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: git-test
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: nacos # Nacos服务器地址
+        namespace: nacos # 命名空间ID（可选）
+        username: nacos
+        password: nacos
+        file-extension: yaml # 配置文件格式，默认为properties
+      discovery:
+        server-addr: nacos # Nacos服务器地址，与服务配置共享
+        namespace: nacos  # 命名空间ID（可选），与服务配置共享
+        username: nacos
+        password: nacos
